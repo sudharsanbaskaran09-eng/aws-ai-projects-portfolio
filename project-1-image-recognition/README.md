@@ -1,4 +1,4 @@
-# 🖼️ Project 1 — AI Image Recognition App (AWS)
+# Project 1 — AI Image Recognition App (AWS)
 
 ## 📌 Overview
 This project is a **serverless AI-powered image recognition application** built on AWS.  
