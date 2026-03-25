@@ -1,1 +1,233 @@
-
+[
+    {
+        "Name": "Adult",
+        "Confidence": 99.65929412841797,
+        "Instances": [
+            {
+                "BoundingBox": {
+                    "Width": 0.7577526569366455,
+                    "Height": 0.9276720881462097,
+                    "Left": 0.11503680795431137,
+                    "Top": 0.0697007030248642
+                },
+                "Confidence": 99.65929412841797
+            }
+        ],
+        "Parents": [
+            {
+                "Name": "Person"
+            }
+        ],
+        "Aliases": [],
+        "Categories": [
+            {
+                "Name": "Person Description"
+            }
+        ]
+    },
+    {
+        "Name": "Male",
+        "Confidence": 99.65929412841797,
+        "Instances": [
+            {
+                "BoundingBox": {
+                    "Width": 0.7577526569366455,
+                    "Height": 0.9276720881462097,
+                    "Left": 0.11503680795431137,
+                    "Top": 0.0697007030248642
+                },
+                "Confidence": 99.65929412841797
+            }
+        ],
+        "Parents": [
+            {
+                "Name": "Person"
+            }
+        ],
+        "Aliases": [],
+        "Categories": [
+            {
+                "Name": "Person Description"
+            }
+        ]
+    },
+    {
+        "Name": "Man",
+        "Confidence": 99.65929412841797,
+        "Instances": [
+            {
+                "BoundingBox": {
+                    "Width": 0.7577526569366455,
+                    "Height": 0.9276720881462097,
+                    "Left": 0.11503680795431137,
+                    "Top": 0.0697007030248642
+                },
+                "Confidence": 99.65929412841797
+            }
+        ],
+        "Parents": [
+            {
+                "Name": "Adult"
+            },
+            {
+                "Name": "Male"
+            },
+            {
+                "Name": "Person"
+            }
+        ],
+        "Aliases": [],
+        "Categories": [
+            {
+                "Name": "Person Description"
+            }
+        ]
+    },
+    {
+        "Name": "Person",
+        "Confidence": 99.65929412841797,
+        "Instances": [
+            {
+                "BoundingBox": {
+                    "Width": 0.7577526569366455,
+                    "Height": 0.9276720881462097,
+                    "Left": 0.11503680795431137,
+                    "Top": 0.0697007030248642
+                },
+                "Confidence": 99.65929412841797
+            }
+        ],
+        "Parents": [],
+        "Aliases": [
+            {
+                "Name": "Human"
+            }
+        ],
+        "Categories": [
+            {
+                "Name": "Person Description"
+            }
+        ]
+    },
+    {
+        "Name": "Sleeve",
+        "Confidence": 99.27510070800781,
+        "Instances": [],
+        "Parents": [
+            {
+                "Name": "Clothing"
+            }
+        ],
+        "Aliases": [],
+        "Categories": [
+            {
+                "Name": "Apparel and Accessories"
+            }
+        ]
+    },
+    {
+        "Name": "Motorcycle",
+        "Confidence": 98.8492660522461,
+        "Instances": [
+            {
+                "BoundingBox": {
+                    "Width": 0.8945841789245605,
+                    "Height": 0.5114952325820923,
+                    "Left": 0.0002478027599863708,
+                    "Top": 0.4856736958026886
+                },
+                "Confidence": 98.8492660522461
+            }
+        ],
+        "Parents": [
+            {
+                "Name": "Transportation"
+            },
+            {
+                "Name": "Vehicle"
+            }
+        ],
+        "Aliases": [],
+        "Categories": [
+            {
+                "Name": "Vehicles and Automotive"
+            }
+        ]
+    },
+    {
+        "Name": "Black Hair",
+        "Confidence": 97.34761047363281,
+        "Instances": [],
+        "Parents": [
+            {
+                "Name": "Hair"
+            },
+            {
+                "Name": "Person"
+            }
+        ],
+        "Aliases": [],
+        "Categories": [
+            {
+                "Name": "Beauty and Personal Care"
+            }
+        ]
+    },
+    {
+        "Name": "Hair",
+        "Confidence": 97.34761047363281,
+        "Instances": [],
+        "Parents": [
+            {
+                "Name": "Person"
+            }
+        ],
+        "Aliases": [],
+        "Categories": [
+            {
+                "Name": "Beauty and Personal Care"
+            }
+        ]
+    },
+    {
+        "Name": "Wristwatch",
+        "Confidence": 90.8379135131836,
+        "Instances": [
+            {
+                "BoundingBox": {
+                    "Width": 0.049321163445711136,
+                    "Height": 0.02823563478887081,
+                    "Left": 0.7442131042480469,
+                    "Top": 0.5681169629096985
+                },
+                "Confidence": 90.8379135131836
+            }
+        ],
+        "Parents": [],
+        "Aliases": [],
+        "Categories": [
+            {
+                "Name": "Apparel and Accessories"
+            }
+        ]
+    },
+    {
+        "Name": "Headlight",
+        "Confidence": 84.83744812011719,
+        "Instances": [],
+        "Parents": [
+            {
+                "Name": "Transportation"
+            },
+            {
+                "Name": "Vehicle"
+            }
+        ],
+        "Aliases": [],
+        "Categories": [
+            {
+                "Name": "Vehicles and Automotive"
+            }
+        ]
+    }
+]
