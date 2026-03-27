@@ -36,7 +36,7 @@ User → API Gateway → Lambda → Rekognition → S3
 2. Configure AWS CLI with your credentials  
 3. Upload an image to the S3 bucket (e.g., `uploads/` folder)  
 4. Invoke the API using curl or Postman with the image name  
-5. Receive AI-generate 
+5. Receive AI-generated labels in JSON format  
 
 ---
 
