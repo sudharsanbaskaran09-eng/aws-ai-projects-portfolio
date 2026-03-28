@@ -1,1 +1,77 @@
+import boto3
+import json
 
+# Initialize AWS clients
+s3_client = boto3.client('s3', region_name='us-east-1')
+comprehend_client = boto3.client('comprehend', region_name='us-east-1')
+
+BUCKET_NAME = 'sentiment-analysis-brat'
+
+def analyze_sentiment(text):
+    """Send text to Comprehend for sentiment analysis"""
+    print(f"\n🤖 Analyzing sentiment...")
+    print(f"📝 Text: {text[:100]}")
+
+    response = comprehend_client.detect_sentiment(
+        Text=text,
+        LanguageCode='en'
+    )
+
+    sentiment = response['Sentiment']
+    scores = response['SentimentScore']
+
+    print("\n🎯 Sentiment Analysis Results:")
+    print("-" * 40)
+    print(f"  Overall Sentiment : {sentiment}")
+    print(f"  Positive Score    : {scores['Positive']:.2%}")
+    print(f"  Negative Score    : {scores['Negative']:.2%}")
+    print(f"  Neutral Score     : {scores['Neutral']:.2%}")
+    print(f"  Mixed Score       : {scores['Mixed']:.2%}")
+
+    return response
+
+def analyze_multiple_texts(texts):
+    """Analyze sentiment of multiple texts"""
+    print("\n📊 Batch Sentiment Analysis:")
+    print("=" * 50)
+
+    results = []
+    for i, text in enumerate(texts, 1):
+        print(f"\n[{i}] {text[:60]}")
+        response = comprehend_client.detect_sentiment(
+            Text=text,
+            LanguageCode='en'
+        )
+        results.append({
+            'text': text,
+            'sentiment': response['Sentiment'],
+            'scores': response['SentimentScore']
+        })
+        print(f"    ✅ Sentiment: {response['Sentiment']}")
+
+    return results
+
+def save_results_to_s3(results, filename):
+    """Save results to S3"""
+    with open(filename, 'w') as f:
+        json.dump(results, f, indent=4)
+    s3_client.upload_file(filename, BUCKET_NAME, f'results/{filename}')
+    print(f"\n☁️ Results saved to S3: results/{filename}")
+
+# ---- MAIN ----
+if __name__ == "__main__":
+    # Single text test
+    single_text = "I absolutely love this product! Amazing quality and super fast delivery!"
+    analyze_sentiment(single_text)
+
+    # Multiple customer reviews
+    reviews = [
+        "Best purchase ever! Totally worth every penny!",
+        "Terrible product. Broke after one day. Very disappointed.",
+        "It is okay. Nothing special but gets the job done.",
+        "Absolutely fantastic! Will definitely buy again!",
+        "Worst customer service ever. Never buying from here again."
+    ]
+
+    results = analyze_multiple_texts(reviews)
+    save_results_to_s3(results, 'sentiment_results.json')
