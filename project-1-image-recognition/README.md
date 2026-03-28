@@ -1,106 +1,71 @@
-# Project 1 — AI Image Recognition App (AWS)
+# Image Recognition App — AWS AI Project
 
-An AI-powered cloud application that analyzes images and detects objects using AWS services.
+## Overview
+A serverless image recognition application built on AWS that automatically
+detects objects, scenes, and labels in images using Amazon Rekognition.
+Designed to demonstrate real-world AI integration with cloud-native architecture.
 
----
+## Architecture
+User → API Gateway → Lambda → Rekognition → S3
 
-## 🚀 Project Overview
+## AWS Services Used
 
-This project demonstrates how to build a **serverless AI application** using AWS.
+| Service | Purpose |
+|---------|---------|
+| Amazon Rekognition | AI-powered image analysis and label detection |
+| AWS Lambda | Serverless compute to process requests |
+| Amazon API Gateway | REST API endpoint exposure |
+| Amazon S3 | Image upload and results storage |
+| AWS IAM | Security, roles and permissions |
 
-### Workflow:
-1. Upload image to S3  
-2. Trigger AI analysis using Rekognition  
-3. Process via Lambda  
-4. Access results via API  
+## Real World Use Cases
+- Automatic product image tagging for e-commerce platforms
+- Security and surveillance content analysis
+- Social media content moderation pipelines
+- Medical imaging classification systems
 
----
-
-## 🏗️ Architecture
-
-- Amazon S3 → Stores images  
-- AWS Lambda → Processes requests  
-- Amazon Rekognition → Detects labels  
-- API Gateway → Exposes REST API  
-
----
-
-## ⚙️ Tech Stack
-
-- Python (boto3)  
-- AWS S3  
-- AWS Rekognition  
-- AWS Lambda  
-- AWS API Gateway  
-
----
-
-## 📂 Project Structure
-
+## Project Structure
+```
 project-1-image-recognition/
-│
-├── rekognition_app.py  
-├── results.json  
-└── README.md  
+├── rekognition_app.py       # Local script to upload and analyze images
+├── lambda_function.py       # Lambda handler for serverless execution
+├── results.json             # Sample AI output
+└── screenshots/             # Step by step project documentation
+```
 
----
+## Prerequisites
+- AWS Account with Free Tier
+- Python 3.x
+- AWS CLI configured
+- boto3 installed
 
-## 🔧 Setup Instructions
+## How to Run
 
-### 1. Configure AWS CLI
-aws configure
-
-### 2. Install Dependencies
+### Local
+```bash
 pip install boto3
-
-### 3. Run the App
+aws configure
 python rekognition_app.py
+```
 
----
+### API
+```bash
+Invoke-WebRequest -Uri "https://your-api-url/prod/analyze" `
+-Method POST `
+-Headers @{"Content-Type"="application/json"} `
+-Body '{"bucket": "your-bucket", "image": "your-image.jpg"}'
+```
 
-## 🧪 API Testing
+## Sample Output
+```json
+[
+    { "Name": "Person", "Confidence": 99.81 },
+    { "Name": "Outdoors", "Confidence": 97.45 },
+    { "Name": "Nature", "Confidence": 95.12 }
+]
+```
 
-curl -X POST https://your-api-url/prod/analyze \
--H "Content-Type: application/json" \
--d '{"bucket": "your-bucket-name", "image": "test_image.jpg"}'
-
----
-
-## 📸 Features
-
-- Upload images to cloud  
-- AI-based image recognition  
-- JSON output with confidence scores  
-- Serverless execution  
-- REST API integration  
-
----
-
-## 📚 Learning Outcomes
-
-- AWS IAM & Security  
-- Serverless Architecture  
-- AI API Integration  
-- Cloud Application Design  
-
----
-
-## 📌 Future Improvements
-
-- Web UI for uploads  
-- Real-time processing  
-- Face detection  
-- Database integration (DynamoDB)  
-
----
-
-## 👤 Author
-
-Sudharsan B  
-
-
----
-
-## ⭐ Support
-
-If you like this project, give it a ⭐ on GitHub!
+## Author
+Sudharsan 
+- LinkedIn: https://linkedin.com/in/sudharsan-baskaran-95443925a
+- GitHub: https://github.com/sudharsanbaskaran09-eng
