@@ -31,4 +31,4 @@ User → API Gateway → Lambda → Comprehend → S3
 All screenshots are in the /screenshots folder
 
 ## 👤 Author
-Sudharsan Baskaran
+Sudharsan 
