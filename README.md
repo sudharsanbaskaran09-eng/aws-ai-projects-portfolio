@@ -1,143 +1,106 @@
-# 🤖 AWS AI Projects Portfolio
+# Image Recognition App (AWS AI Project)
 
-A hands-on collection of 6 AI projects built on Amazon Web Services (AWS),
-progressing from beginner to advanced level — built as part of my 
-Cloud AI Architect learning journey.
+An AI-powered cloud application that analyzes images and detects objects using AWS services.
 
 ---
 
-## 👤 About Me
-- 🎓 Fresher | Aspiring Cloud AI Architect
-- ☁️ Learning AWS AI/ML services hands-on
-- 🐍 Python | boto3 | Serverless Architecture
+## 🚀 Project Overview
+
+This project demonstrates how to build a **serverless AI application** using AWS.
+
+### Workflow:
+1. Upload image to S3  
+2. Trigger AI analysis using Rekognition  
+3. Process via Lambda  
+4. Access results via API  
 
 ---
 
-## 📁 Projects
+## 🏗️ Architecture
 
-| # | Project | Services Used | Level |
-|---|---------|--------------|-------|
-| 1 | [🖼️ Image Recognition App](./project-1-image-recognition) | S3, Rekognition, Lambda, API Gateway | 🟢 Beginner |
-| 2 | [💬 Sentiment Analysis Dashboard](./project-2-sentiment-analysis) | Comprehend, Lambda, API Gateway | 🟢 Beginner |
-| 3 | [📄 AI Document Scanner](./project-3-document-scanner) | Textract, S3, DynamoDB, Lambda | 🟡 Intermediate |
-| 4 | [🤖 Smart Chatbot](./project-4-smart-chatbot) | Lex, Lambda, DynamoDB | 🟡 Intermediate |
-| 5 | [✨ GenAI App with Bedrock](./project-5-genai-bedrock) | Bedrock, Lambda, API Gateway | 🔴 Advanced |
-| 6 | [📚 Document Q&A Bot (RAG)](./project-6-document-qa-rag) | Bedrock, S3, OpenSearch, Lambda | 🔴 Advanced |
+- Amazon S3 → Stores images  
+- AWS Lambda → Processes requests  
+- Amazon Rekognition → Detects labels  
+- API Gateway → Exposes REST API  
 
 ---
 
-## 🏗️ Architecture Overview
-```
-User Request
-     ↓
-API Gateway        ← REST API layer
-     ↓
-AWS Lambda         ← Serverless compute
-     ↓
-AI Services        ← Rekognition / Comprehend / Textract / Lex / Bedrock
-     ↓
-Storage            ← S3 / DynamoDB / OpenSearch
-```
+## ⚙️ Tech Stack
+
+- Python (boto3)  
+- AWS S3  
+- AWS Rekognition  
+- AWS Lambda  
+- AWS API Gateway  
 
 ---
 
-## 🛠️ Tech Stack
+## 📂 Project Structure
 
-| Category | Tools |
-|----------|-------|
-| ☁️ Cloud | Amazon Web Services (AWS) |
-| 🐍 Language | Python 3.x |
-| 📦 SDK | boto3 |
-| 🤖 AI Services | Rekognition, Comprehend, Textract, Lex, Bedrock |
-| ⚡ Compute | AWS Lambda (Serverless) |
-| 🗄️ Storage | Amazon S3, DynamoDB |
-| 🔌 API | Amazon API Gateway |
-| 🔐 Security | AWS IAM |
+project-1-image-recognition/
+│
+├── rekognition_app.py  
+├── results.json  
+└── README.md  
 
 ---
 
-## 📂 Repo Structure
-```
-📁 aws-ai-projects-portfolio/
-    📄 README.md
-    📁 project-1-image-recognition/
-    │     📄 README.md
-    │     📄 rekognition_app.py
-    │     📄 results.json
-    │     📁 screenshots/
-    📁 project-2-sentiment-analysis/
-    │     📄 README.md
-    │     📄 sentiment_app.py
-    │     📁 screenshots/
-    📁 project-3-document-scanner/
-    │     📄 README.md
-    │     📄 document_scanner.py
-    │     📁 screenshots/
-    📁 project-4-smart-chatbot/
-    │     📄 README.md
-    │     📄 chatbot_lambda.py
-    │     📁 screenshots/
-    📁 project-5-genai-bedrock/
-    │     📄 README.md
-    │     📄 bedrock_app.py
-    │     📁 screenshots/
-    📁 project-6-document-qa-rag/
-    │     📄 README.md
-    │     📄 rag_app.py
-    │     📁 screenshots/
-```
+## 🔧 Setup Instructions
 
----
-
-## 🚀 How to Set Up
-
-### Prerequisites
-```
-✅ AWS Account (Free Tier)
-✅ Python 3.x installed
-✅ AWS CLI installed and configured
-✅ boto3 installed → pip install boto3
-✅ VS Code
-```
-
-### Configure AWS CLI
-```bash
+### 1. Configure AWS CLI
 aws configure
-# Enter your Access Key, Secret Key, Region, Output format
-```
+
+### 2. Install Dependencies
+pip install boto3
+
+### 3. Run the App
+python rekognition_app.py
 
 ---
 
-## 📜 Certifications (In Progress)
-- [ ] AWS Certified Cloud Practitioner
-- [ ] AWS Certified Solutions Architect – Associate
-- [ ] AWS Certified Machine Learning Specialty
+## 🧪 API Testing
+
+curl -X POST https://your-api-url/prod/analyze \
+-H "Content-Type: application/json" \
+-d '{"bucket": "your-bucket-name", "image": "test_image.jpg"}'
 
 ---
 
-## 📸 Screenshots
-Every project has a dedicated `/screenshots` folder with
-step by step documentation of the entire build process.
+## 📸 Features
+
+- Upload images to cloud  
+- AI-based image recognition  
+- JSON output with confidence scores  
+- Serverless execution  
+- REST API integration  
 
 ---
 
-## 🔗 Connect With Me
-- 💼 LinkedIn: [your-linkedin](#)
-- 🐙 GitHub: [your-github](#)
+## 📚 Learning Outcomes
+
+- AWS IAM & Security  
+- Serverless Architecture  
+- AI API Integration  
+- Cloud Application Design  
 
 ---
 
-⭐ If you find this helpful, please star the repo!
-```
+## 📌 Future Improvements
+
+- Web UI for uploads  
+- Real-time processing  
+- Face detection  
+- Database integration (DynamoDB)  
 
 ---
 
-## 📌 Each Project Also Has Its Own README
+## 👤 Author
 
-Each project folder has its own `README.md` explaining:
-```
-📌 What the project does
-🏗️ Architecture diagram
-⚙️ Services used
-🚀 How to run
-📸 Screenshots
+Sudharsan B  
+Cloud & AI Enthusiast  
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
