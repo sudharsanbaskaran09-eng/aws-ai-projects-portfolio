@@ -27,3 +27,52 @@ User → API Gateway → Lambda → Textract → DynamoDB → S3
 - Healthcare patient record digitization
 
 ## Project Structure
+
+```
+
+project-3-document-scanner/
+├── document_scanner.py      # Local script for document scanning
+├── lambda_function.py       # Lambda handler for serverless execution
+├── README.md
+└── screenshots/
+
+```
+
+## Prerequisites
+- AWS Account with Free Tier
+- Python 3.x
+- AWS CLI configured
+- boto3 installed
+
+## How to Run
+
+### Local
+```bash
+pip install boto3
+aws configure
+python document_scanner.py
+```
+
+### API
+```powershell
+Invoke-WebRequest -Uri "https://your-api-url/prod/scan" `
+-Method POST `
+-Headers @{"Content-Type"="application/json"} `
+-Body '{"bucket": "document-scanner-brat", "file_name": "your-document.jpg"}'
+```
+
+## Sample Output
+```json
+{
+    "document_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "file_name": "sample_document.jpg",
+    "total_lines": 50,
+    "extracted_text": "Invoice Number: 12345\nDate: 2024-01-15\nTotal: $250.00",
+    "message": "Document scanned successfully!"
+}
+```
+
+## Author
+Sudharsan
+- LinkedIn: https://linkedin.com/in/sudharsan-baskaran-95443925a
+- GitHub: https://github.com/sudharsanbaskaran09-eng
