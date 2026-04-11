@@ -3,28 +3,7 @@ import json
 
 # Initialize AWS clients
 s3_client = boto3.client('s3', region_name='us-east-1')
-comprehend_client = boto3.client('comprehend', region_name='us-east-1')
 
-BUCKET_NAME = 'sentiment-analysis-brat'
-
-def analyze_sentiment(text):
-    """Send text to Comprehend for sentiment analysis"""
-    print(f"\n🤖 Analyzing sentiment...")
-    print(f"📝 Text: {text[:100]}")
-
-    print(f"  Negative Score    : {scores['Negative']:.2%}")
-    print(f"  Neutral Score     : {scores['Neutral']:.2%}")
-    print(f"  Mixed Score       : {scores['Mixed']:.2%}")
-
-    return response
-
-def analyze_multiple_texts(texts):
-    """Analyze sentiment of multiple texts"""
-    print("\n📊 Batch Sentiment Analysis:")
-    print("=" * 50)
-
-    results = []
-    for i, text in enumerate(texts, 1):
         print(f"\n[{i}] {text[:60]}")
         response = comprehend_client.detect_sentiment(
             Text=text,
