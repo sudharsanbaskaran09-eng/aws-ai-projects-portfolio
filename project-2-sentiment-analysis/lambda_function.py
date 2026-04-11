@@ -8,11 +8,7 @@ def lambda_handler(event, context):
     # Handle both direct and API Gateway requests
     if isinstance(event.get('body'), str):
         body = json.loads(event['body'])
-    else:
-        body = event
-
-    text = body['text']
-
+    el
     # Call Comprehend
     response = comprehend_client.detect_sentiment(
         Text=text,
