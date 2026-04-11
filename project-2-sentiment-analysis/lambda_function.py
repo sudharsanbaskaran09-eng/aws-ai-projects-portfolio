@@ -10,11 +10,7 @@ def lambda_handler(event, context):
         body = json.loads(event['body'])
     el
     # Call Comprehend
-    response = comprehend_client.detect_sentiment(
-        Text=text,
-        LanguageCode='en'
-    )
-
+    response = comprehend_client.detect_senti
     sentiment = response['Sentiment']
     scores = response['SentimentScore']
 
