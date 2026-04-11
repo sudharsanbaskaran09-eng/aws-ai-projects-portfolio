@@ -12,17 +12,7 @@ s3_client = boto3.client('s3', region_name='us-east-1')
         results.append({
             'text': text,
             'sentiment': response['Sentiment'],
-            'scores': response['SentimentScore']
-        })
-        print(f"    ✅ Sentiment: {response['Sentiment']}")
-
-    return results
-
-def save_results_to_s3(results, filename):
-    """Save results to S3"""
-    with open(filename, 'w') as f:
-        json.dump(results, f, indent=4)
-    s3_client.upload_file(filename, BUCKET_NAME, f'results/{filename}')
+            'scores': r
     print(f"\n☁️ Results saved to S3: results/{filename}")
 
 # ---- MAIN ----
