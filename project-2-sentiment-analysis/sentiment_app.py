@@ -12,18 +12,6 @@ def analyze_sentiment(text):
     print(f"\n🤖 Analyzing sentiment...")
     print(f"📝 Text: {text[:100]}")
 
-    response = comprehend_client.detect_sentiment(
-        Text=text,
-        LanguageCode='en'
-    )
-
-    sentiment = response['Sentiment']
-    scores = response['SentimentScore']
-
-    print("\n🎯 Sentiment Analysis Results:")
-    print("-" * 40)
-    print(f"  Overall Sentiment : {sentiment}")
-    print(f"  Positive Score    : {scores['Positive']:.2%}")
     print(f"  Negative Score    : {scores['Negative']:.2%}")
     print(f"  Neutral Score     : {scores['Neutral']:.2%}")
     print(f"  Mixed Score       : {scores['Mixed']:.2%}")
