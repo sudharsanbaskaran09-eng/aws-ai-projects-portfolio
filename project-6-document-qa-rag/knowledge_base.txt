@@ -1,0 +1,56 @@
+AWS Cloud AI Architect Knowledge Base
+
+What is Amazon Bedrock?
+Amazon Bedrock is a fully managed service that provides access to
+foundation models from leading AI companies through a single API.
+It supports models from Anthropic, Meta, Amazon and other providers.
+Bedrock enables developers to build GenAI applications without
+managing any ML infrastructure.
+
+What is Amazon S3?
+Amazon S3 is an object storage service offering scalability, data
+availability, security and performance. It is used to store and
+retrieve any amount of data from anywhere. S3 is one of the most
+widely used AWS services across all industries.
+
+What is AWS Lambda?
+AWS Lambda is a serverless compute service that runs code without
+provisioning or managing servers. You pay only for the compute time
+you consume. Lambda automatically scales and supports Python,
+Node.js, Java and other runtimes.
+
+What is Amazon Rekognition?
+Amazon Rekognition is an AI service that adds image and video analysis
+to applications. It identifies objects, people, text, scenes and
+activities in images and videos using deep learning technology.
+
+What is Amazon Comprehend?
+Amazon Comprehend is a natural language processing service that uses
+machine learning to find insights in text. It detects sentiment,
+entities, key phrases and language in any text content.
+
+What is Amazon Textract?
+Amazon Textract is a machine learning service that automatically extracts
+text and data from scanned documents. It goes beyond simple OCR to
+identify fields in forms and information stored in tables.
+
+What is a Cloud AI Architect?
+A Cloud AI Architect designs and implements AI powered solutions on cloud
+platforms like AWS. They work with services like Bedrock, SageMaker,
+Rekognition and Comprehend to build scalable intelligent applications.
+
+What is RAG?
+RAG stands for Retrieval Augmented Generation. It is an AI architecture
+that combines document retrieval with text generation. The system first
+retrieves relevant context from a knowledge base then uses a language
+model to generate accurate answers based on that context.
+
+What is Amazon DynamoDB?
+Amazon DynamoDB is a fully managed NoSQL database service that provides
+fast and predictable performance with seamless scalability. It is used
+for applications that need consistent single digit millisecond latency.
+
+What is Amazon Lex?
+Amazon Lex is a service for building conversational interfaces using
+voice and text. It uses the same deep learning technologies that power
+Amazon Alexa to understand natural language and generate responses.
