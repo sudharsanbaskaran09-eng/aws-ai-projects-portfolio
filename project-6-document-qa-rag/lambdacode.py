@@ -7,12 +7,6 @@ bedrock_client = boto3.client(
     region_name='us-east-1'
 )
 
-BUCKET_NAME = 'rag-documents-brat'
-MODEL_ID = 'amazon.nova-lite-v1:0'
-
-def load_knowledge_base():
-    response = s3_client.get_object(
-        Bucket=BUCKET_NAME,
         Key='documents/knowledge_base.txt'
     )
     return response['Body'].read().decode('utf-8')
