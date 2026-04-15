@@ -6,11 +6,6 @@ bedrock_client = boto3.client(
     service_name='bedrock-runtime',
     region_name='us-east-1'
 )
-
-        Key='docume
-
-def find_relevant_chunks(question, chunks, top_k=3):
-    question_words = set(question.lower().split())
     scored_chunks = []
     for chunk in chunks:
         chunk_words = set(chunk.lower().split())
