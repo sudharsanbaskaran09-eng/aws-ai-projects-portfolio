@@ -7,13 +7,6 @@ bedrock_client = boto3.client(
     region_name='us-east-1'
 )
     scored_chunks = []
-    for chunk in chunks:
-        chunk_words = set(chunk.lower().split())
-        overlap = len(question_words.intersection(chunk_words))
-        scored_chunks.append((overlap, chunk))
-    scored_chunks.sort(reverse=True)
-    relevant = [chunk for score, chunk in scored_chunks[:top_k] if score > 0]
-    return relevant if relevant else [chunks[0]]
 
 def generate_answer(question, context):
     prompt = f"""You are a helpful AWS knowledge assistant.
