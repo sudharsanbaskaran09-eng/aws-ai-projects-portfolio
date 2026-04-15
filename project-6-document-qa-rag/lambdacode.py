@@ -7,13 +7,7 @@ bedrock_client = boto3.client(
     region_name='us-east-1'
 )
 
-        Key='documents/knowledge_base.txt'
-    )
-    return response['Body'].read().decode('utf-8')
-
-def split_into_chunks(text):
-    paragraphs = text.split('\n\n')
-    return [p.strip() for p in paragraphs if p.strip()]
+        Key='docume
 
 def find_relevant_chunks(question, chunks, top_k=3):
     question_words = set(question.lower().split())
