@@ -8,18 +8,8 @@ import boto3
     content = response['Body'].read().decode('utf-8')
     print(f"✅ Knowledge base(text, chunk_size=400):
     """Split document into smaller chunks"""
-    paragraphs = text.split('\n\n')
-    chunks = []
-        if para.strip():
-            chunks.append(para.strip())
-    print(f"📄 Document split into {len(chunks)} chunks")
-    return chunks
-
-def find_relevant_chunks(question, chunks, top_k=3):
-    """Find most relevant chunks using keyword matching"""
-    question_words = set(question.lower().split())
-    scored_chunks = []
-
+    paragr
+        if
     for chunk in chunks:
         chunk_words = set(chunk.lower().split())
         overlap = len(question_words.intersection(chunk_words))
