@@ -20,23 +20,7 @@ import boto3
 
 Answer:"""
 
-    # Nova Lite uses Messages API format
-    request_body = {
-        "messages": [
-            {
-                "role": "user",
-                "content": [
-                    {
-                        "text": prompt
-                    }
-                ]
-            }
-        ],
-        "inferenceConfig": {
-            "maxTokens": 512,
-            "temperature": 0.3
-        }
-    }
+    # No
 
     response = bedrock_client.invoke_model(
         modelId=MODEL_ID,
