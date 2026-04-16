@@ -4,13 +4,7 @@ import boto3
     response = s3_client.get_object(
         Bucket=BUCKET_NAME,
         Key='documents/knowledge_base.txt'
-    )
-    content = response['Body'].read().decode('utf-8')
-    print(f"✅ Knowledge base(text, chunk_size=400):
-    """Split document into smaller chunks"""
-    paragr
-        if
-    for chunk in chunks:
+  
         chunk_words = set(chunk.lower().split())
         overlap = len(question_words.intersection(chunk_words))
         scored_chunks.append((overlap, chunk))
