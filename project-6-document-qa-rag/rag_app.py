@@ -33,16 +33,6 @@ def find_relevant_chunks(question, chunks, top_k=3):
 
     return relevant
 
-def generate_answer(question, context):
-    """Send question + context to Bedrock Nova Lite"""
-    prompt = f"""You are a helpful AWS knowledge assistant.
-Use only the following context to answer the question.
-If the answer is not in the context say I do not have that information.
-
-Context:
-{context}
-
-Question: {question}
 
 Answer:"""
 
