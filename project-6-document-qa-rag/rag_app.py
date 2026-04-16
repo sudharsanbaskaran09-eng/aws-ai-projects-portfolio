@@ -6,10 +6,6 @@ s3_client = boto3.client('s3', region_name='us-east-1')
 bedrock_client = boto3.client(
     service_name='bedrock-runtime',
     region_name='us-east-1'
-)
-
-BUCKET_NAME = 'rag-documents-brat'
-MODEL_ID = 'amazon.nova-lite-v1:0'
 
 def load_knowledge_base():
     """Load knowledge base from S3"""
