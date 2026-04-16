@@ -1,14 +1,5 @@
 import boto3
-import json
 
-# Initialize AWS clients
-s3_client = boto3.client('s3', region_name='us-east-1')
-bedrock_client = boto3.client(
-    service_name='bedrock-runtime',
-    region_name='us-east-1'
-
-def load_knowledge_base():
-    """Load knowledge base from S3"""
     print("📚 Loading knowledge base from S3...")
     response = s3_client.get_object(
         Bucket=BUCKET_NAME,
