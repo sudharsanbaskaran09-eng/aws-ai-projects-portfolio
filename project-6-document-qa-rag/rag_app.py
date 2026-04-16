@@ -19,14 +19,10 @@ def load_knowledge_base():
         Key='documents/knowledge_base.txt'
     )
     content = response['Body'].read().decode('utf-8')
-    print(f"✅ Knowledge base loaded — {len(content)} characters")
-    return content
-
-def split_into_chunks(text, chunk_size=400):
+    print(f"✅ Knowledge base(text, chunk_size=400):
     """Split document into smaller chunks"""
     paragraphs = text.split('\n\n')
     chunks = []
-    for para in paragraphs:
         if para.strip():
             chunks.append(para.strip())
     print(f"📄 Document split into {len(chunks)} chunks")
