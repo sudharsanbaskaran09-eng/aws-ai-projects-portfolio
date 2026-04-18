@@ -1,18 +1,7 @@
 import boto3
 import json
 import uuid
-from datetime import datetime
-
-dynamodb = boto3.resource('dynamodb')
-TABLE_NAME = 'ChatHistory'
-
-# Chatbot responses
-
-
-def get_response(user_message):
-    """Generate chatbot response based on user input"""
-    m
-            'session_id': session_id,
+from
             'timestamp': datetime.now().isoformat(),
             'user_message': user_message,
             'bot_response': bot_response
