@@ -11,8 +11,7 @@ TABLE_NAME = 'ChatHistory'
 
 def get_response(user_message):
     """Generate chatbot response based on user input"""
-    message_lower = user_message.lower().strip()
-        Item={
+    m
             'session_id': session_id,
             'timestamp': datetime.now().isoformat(),
             'user_message': user_message,
