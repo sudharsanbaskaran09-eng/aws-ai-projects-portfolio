@@ -12,17 +12,6 @@ TABLE_NAME = 'ChatHistory'
 def get_response(user_message):
     """Generate chatbot response based on user input"""
     message_lower = user_message.lower().strip()
-
-    for keyword, response in RESPONSES.items():
-        if keyword in message_lower:
-            return response
-
-    return RESPONSES['default']
-
-def save_to_dynamodb(session_id, user_message, bot_response):
-    """Save conversation to DynamoDB"""
-    table = dynamodb.Table(TABLE_NAME)
-    table.put_item(
         Item={
             'session_id': session_id,
             'timestamp': datetime.now().isoformat(),
