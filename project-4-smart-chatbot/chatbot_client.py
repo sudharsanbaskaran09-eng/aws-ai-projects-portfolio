@@ -2,10 +2,6 @@ import requests
 import uuid
 import json
 
-API_URL = "https://n4majb3iml.execute-api.us-east-1.amazonaws.com/prod/chat"
-
-# Unique session ID (helps track chat history in DynamoDB)
-SESSION_ID = str(uuid.uuid4())
 
 def chat(message):
     """Send message to chatbot API and return response"""
