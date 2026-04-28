@@ -13,18 +13,7 @@ import json
     except json.JSONDecodeError:
         return "Error parsing response from server"
 
-# ---- MAIN PROGRAM ----
-print("=" * 50)
-print("AWS Smart Chatbot — Lambda + DynamoDB")
-print("=" * 50)
-print("Type 'quit' to exit\n")
 
-while True:
-    user_input = input("You: ")
-
-    if user_input.lower() == 'quit':
-        print("Bot: Goodbye! Chat history saved to DynamoDB!")
-        break
 
     response = chat(user_input)
     print(f"Bot: {response}\n")
