@@ -1,17 +1,7 @@
 import boto3
 import json
 
-s3_client = boto3.client('s3', region_name='us-east-1')
-bedrock_client = boto3.client(
-    service_name='bedrock-runtime AWS knowledge assistant.
-Use only the following context to answer the question.
-If the answer is not in the context say I do not have that information.
-
-Context:
-{context}
-
-Question: {question}
-
+s3_cli
 Answer:"""
 
     request_body = {
