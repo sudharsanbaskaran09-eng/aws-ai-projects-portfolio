@@ -1,28 +1,6 @@
 import boto3
 import json
-    return response['Body'].read().decode('utf-8'n, context):
-    prompt = f"""You are a helpful AWS knowledge assistant.
-Use only the following context to answer the question.
-If the answer is not in the context say I do not have that information.
-
-Context:
-{context}
-
-Question: {question}
-
-Answer:"""
-
-    request_body = {
-        "messages": [
-            {
-                "role": "user",
-                "content": [{"text": prompt}]
-            }
-        ],
-        "inferenceConfig": {
-            "maxTokens": 512,
-            "temperature": 0.3
-        }
+    r
     }
 
     response = bedrock_client.invoke_model(
