@@ -1,29 +1,6 @@
 import boto3
 import json
 
-s3_cli
-Answer:"""
-
-    request_body = {
-        "messages": [
-            {
-                "role": "user",
-                "content": [{"text": prompt}]
-            }
-        ],
-        "inferenceConfig": {
-            "maxTokens": 512,
-            "temperature": 0.3
-        }
-    }
-
-    response = bedrock_client.invoke_model(
-        modelId=MODEL_ID,
-        body=json.dumps(request_body),
-        contentType='application/json',
-        accept='application/json'
-    )
-
     response_body = json.loads(response['body'].read())
     return response_body['output']['message']['content'][0]['text']
 
