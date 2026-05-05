@@ -1,20 +1,5 @@
 import boto3
 import json
-
-s3_client = boto3.client('s3', region_name='us-east-1')
-bedrock_client = boto3.client(
-    service_name='bedrock-runtime',
-    region_name='us-east-1'
-)
-
-BUCKET_NAME = 'rag-documents-brat'
-MODEL_ID = 'amazon.nova-lite-v1:0'
-
-def load_knowledge_base():
-    response = s3_client.get_object(
-        Bucket=BUCKET_NAME,
-        Key='documents/knowledge_base.txt'
-    )
     return response['Body'].read().decode('utf-8')
 
 def split_into_chunks(text):
