@@ -1,23 +1,6 @@
 import boto3
 import json
-    return response['Body'].read().decode('utf-8')
-
-def split_into_chunks(text):
-    paragraphs = text.split('\n\n')
-    return [p.strip() for p in paragraphs if p.strip()]
-
-def find_relevant_chunks(question, chunks, top_k=3):
-    question_words = set(question.lower().split())
-    scored_chunks = []
-    for chunk in chunks:
-        chunk_words = set(chunk.lower().split())
-        overlap = len(question_words.intersection(chunk_words))
-        scored_chunks.append((overlap, chunk))
-    scored_chunks.sort(reverse=True)
-    relevant = [chunk for score, chunk in scored_chunks[:top_k] if score > 0]
-    return relevant if relevant else [chunks[0]]
-
-def generate_answer(question, context):
+    return response['Body'].read().decode('utf-8'n, context):
     prompt = f"""You are a helpful AWS knowledge assistant.
 Use only the following context to answer the question.
 If the answer is not in the context say I do not have that information.
