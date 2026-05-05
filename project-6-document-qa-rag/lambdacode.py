@@ -3,23 +3,7 @@ import json
     r
     }
 
-    response = bedrock_client.invoke_model(
-        modelId=MODEL_ID,
-        body=json.dumps(request_body),
-        contentType='application/json',
-        accept='application/json'
-    )
-
-    response_body = json.loads(response['body'].read())
-    return response_body['output']['message']['content'][0]['text']
-
-def lambda_handler(event, context):
-    if isinstance(event.get('body'), str):
-        body = json.loads(event['body'])
-    else:
-        body = event
-
-    question = body.get('question', '')
+    response = bedrock_client.invoke_model')
 
     if not question:
         return {
