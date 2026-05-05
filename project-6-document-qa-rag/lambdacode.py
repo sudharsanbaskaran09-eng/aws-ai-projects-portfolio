@@ -3,21 +3,7 @@ import json
 
 s3_client = boto3.client('s3', region_name='us-east-1')
 bedrock_client = boto3.client(
-    service_name='bedrock-runtime',
-    region_name='us-east-1'
-)
-n.lower().split())
-    scored_chunks = []
-    for chunk in chunks:
-        chunk_words = set(chunk.lower().split())
-        overlap = len(question_words.intersection(chunk_words))
-        scored_chunks.append((overlap, chunk))
-    scored_chunks.sort(reverse=True)
-    relevant = [chunk for score, chunk in scored_chunks[:top_k] if score > 0]
-    return relevant if relevant else [chunks[0]]
-
-def generate_answer(question, context):
-    prompt = f"""You are a helpful AWS knowledge assistant.
+    service_name='bedrock-runtime AWS knowledge assistant.
 Use only the following context to answer the question.
 If the answer is not in the context say I do not have that information.
 
