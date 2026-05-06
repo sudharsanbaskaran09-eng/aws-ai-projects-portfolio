@@ -4,12 +4,6 @@ import json
     response_body = json.loads(response['body'].read())
     return response_body['output']['message']['content'][0]['text']
 
-def lambda_handler(event, context):
-    if isinstance(event.get('body'), str):
-        body = json.loads(event['body'])
-    else:
-        body = event
-
     question = body.get('question', '')
 
     if not question:
