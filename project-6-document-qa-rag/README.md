@@ -4,23 +4,7 @@
 A serverless Retrieval Augmented Generation (RAG) application built on AWS
 that answers questions based on a custom knowledge base stored in S3.
 Uses Amazon Nova Lite via Bedrock for answer generation and retrieves
-context from documents before generating responses — ensuring accurate,
-grounded AI answers.
-
-## Architecture
- exposure |
-| AWS IAM | Security, roles and permissions |
-
-## Real World Use Cases
-- Enterprise document Q&A systems
-- Customer support knowledge base bots
-- Legal and compliance document assistants
-- HR policy and onboarding assistants
-
-## Project Structure
-```
-project-6-document-qa-rag/
-├── rag_app.py               # Local RAG pipeline script
+context from documents before generating responses — ensuring ac       # Local RAG pipeline script
 ├── lambda_function.py       # Lambda handler for serverless RAG
 ├── knowledge_base.txt       # Sample knowledge base document
 ├── README.md
