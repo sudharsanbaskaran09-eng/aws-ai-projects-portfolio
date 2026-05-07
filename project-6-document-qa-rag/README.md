@@ -1,37 +1,4 @@
-# Document Q&A Bot (RAG Architecture) — AWS AI Project
-
-## Overview
-A serverless Retrieval Augmented Generation (RAG) application built on AWS
-that answers questions based on a custom knowledge base stored in S3.
-Uses Amazon Nova Lite via Bedrock for answer generation and retrieves
-context from documents before generating responses — ensuring ac       # Local RAG pipeline script
-├── lambda_function.py       # Lambda handler for serverless RAG
-├── knowledge_base.txt       # Sample knowledge base document
-├── README.md
-└── screenshots/
-```
-## Prerequisites
-- AWS Account with Free Tier
-- Python 3.x
-- AWS CLI configured
-- boto3 installed
-
-## How to Run
-
-### Local
-```bash
-pip install boto3
-aws configure
-python rag_app.py
-```
-### API
-```Powershell
-Invoke-WebRequest -Uri "https://your-api-url/prod/ask" `
--Method POST `
--Headers @{"Content-Type"="application/json"} `
--Body '{"question": "What is Amazon Bedrock?"}'
-```
-### Sample Output
+# Document Q&A Bot (R
 ```json
 {
     "question": "What is Amazon Bedrock?",
