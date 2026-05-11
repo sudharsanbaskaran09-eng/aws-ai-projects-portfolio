@@ -4,14 +4,7 @@
 A serverless Generative AI application built on AWS that accepts any
 text prompt and returns AI-generated responses using Amazon Bedrock
 and the Amazon Titan foundation model. Exposed via a REST API and
-deployable at enterprise scale.
-
-## Architecture
-User → API Gateway → Lambda → Amazon Bedrock (Titan) → Response
-
-## AWS Services Used
-
-| AWS IAM | Security, roles and permissions |
+ity, roles and permissions |
 
 ## Real World Use Cases
 - AI content generation for marketing teams
