@@ -11,18 +11,7 @@ ity, roles and permissions |
 - Automated report and summary generation
 al knowl
 - AWS CLI configured
-- boto3 installed
-
-## How to Run
-
-### Local
-```bash
-pip install boto3
-aws configure
-python bedrock_app.py
-
-```
-
+-
 ### API
 ```powershell
 Invoke-WebRequest -Uri "https://8hknovmphb.execute-api.us-east-1.amazonaws.com/prod/generate" `
