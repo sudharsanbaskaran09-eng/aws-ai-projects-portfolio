@@ -18,10 +18,3 @@ ity, roles and permissions |
     "response": "Amazon Web Services (AWS) is a cloud computing platform that provides on-demand access to computing resources such as servers, storage, and databases over the internet. It allows businesses to scale applications without managing physical infrastructure and pay only for what they use. AWS is widely used by startups and enterprises to build, deploy, and manage applications efficiently.",
     "model": "amazon.nova-micro-v1:0"
 }
-
-```
-
-## Author
-Sudharsan Baskaran
-- LinkedIn: https://linkedin.com/in/sudharsan-baskaran-95443925a
-- GitHub: https://github.com/sudharsanbaskaran09-eng
