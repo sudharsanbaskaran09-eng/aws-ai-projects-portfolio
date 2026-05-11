@@ -10,13 +10,7 @@ ity, roles and permissions |
 - AI content generation for marketing teams
 - Automated report and summary generation
 - Customer support response drafting
-- Code explanation and documentation generation
-
-## Project Structure
-
-```
-
-project-5-genai-bedrock/
+- Code explanation and documentation generatio/
 ├── bedrock_app.py           # Local script for GenAI testing
 ├── lambda_function.py       # Lambda handler for serverless execution
 ├── response1.json           # Sample AI output — general knowledge
