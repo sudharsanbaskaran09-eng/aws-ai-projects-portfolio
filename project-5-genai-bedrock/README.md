@@ -7,17 +7,7 @@ and the Amazon Titan foundation model. Exposed via a REST API and
 ity, roles and permissions |
 
 ## Real World Use Cases
-- AI content generation for marketing teams
-- Automated report and summary generation
-al knowl
-- AWS CLI configured
--
-### API
-```powershell
-Invoke-WebRequest -Uri "https://8hknovmphb.execute-api.us-east-1.amazonaws.com/prod/generate" `
--Method POST `
--Headers @{"Content-Type"="application/json"} `
--Body '{"prompt": "Your prompt here"}'
+
 
 ```
 
