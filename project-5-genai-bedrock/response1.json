@@ -1,5 +1,1 @@
-{
-    "prompt": "Explain what Amazon Web Services is in 3 sentences.",
-    "response": "Amazon Web Services (AWS) is a comprehensive and widely adopted cloud platform that provides on-demand availability of a vast array of infrastructure services over the internet. It offers scalable, flexible, and secure computing power, storage, and various other resources to individuals and businesses, allowing them to build, deploy, and manage applications and services with ease. AWS is known for its robust set of tools and services, including computing power, storage solutions, databases, analytics, and machine learning, all aimed at helping customers harness the benefits of the cloud.",
-    "model": "amazon.nova-micro-v1:0"
-}
+
