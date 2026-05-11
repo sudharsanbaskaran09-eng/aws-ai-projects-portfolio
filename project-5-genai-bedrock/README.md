@@ -11,12 +11,6 @@ User → API Gateway → Lambda → Amazon Bedrock (Titan) → Response
 
 ## AWS Services Used
 
-| Service | Purpose |
-|---------|---------|
-| Amazon Bedrock | GenAI foundation model inference |
-| Amazon Titan | Text generation foundation model |
-| AWS Lambda | Serverless compute to handle requests |
-| Amazon API Gateway | REST API endpoint exposure |
 | AWS IAM | Security, roles and permissions |
 
 ## Real World Use Cases
