@@ -9,11 +9,7 @@ ity, roles and permissions |
 ## Real World Use Cases
 - AI content generation for marketing teams
 - Automated report and summary generation
-- Customer support response drafting
-- Code explanation and documentation generatio/
-├── bedrock_app.py           # Local script for GenAI testing
-├── lambda_function.py       # Lambda handler for serverless execution
-├── response1.json           # Sample AI output — general knowledge
+al knowledge
 ├── response2.json           # Sample AI output — technical question
 ├── response3.json           # Sample AI output — creative use case
 ├── README.md
