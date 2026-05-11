@@ -9,18 +9,7 @@ ity, roles and permissions |
 ## Real World Use Cases
 - AI content generation for marketing teams
 - Automated report and summary generation
-al knowledge
-├── response2.json           # Sample AI output — technical question
-├── response3.json           # Sample AI output — creative use case
-├── README.md
-└── screenshots/
-
-```
-
-## Prerequisites
-- AWS Account with Free Tier
-- Amazon Bedrock model access enabled for Titan
-- Python 3.x
+al knowl
 - AWS CLI configured
 - boto3 installed
 
