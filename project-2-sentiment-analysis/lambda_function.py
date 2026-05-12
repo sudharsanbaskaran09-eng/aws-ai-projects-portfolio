@@ -10,12 +10,21 @@ def lambda_handler(event, context):
         body = json.loads(event['body'])
     else:
         body = event
+
+    text = body['text']
+
+    # Call Comprehend
     response = comprehend_client.detect_sentiment(
         Text=text,
-        Lang
+        LanguageCode='en'
+    )
 
-    sentiment =
-    scores = response
+    sentiment = response['Sentiment']
+    scores = response['SentimentScore']
+
+    return {
+        'statusCode': 200,
+        'headers': {
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*'
         },
