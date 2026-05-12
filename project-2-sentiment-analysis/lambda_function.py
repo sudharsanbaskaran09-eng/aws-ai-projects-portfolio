@@ -15,9 +15,7 @@ def lambda_handler(event, context):
         Lang
 
     sentiment =
-    scores = response['SentimentScore']
-
-    ret
+    scores = response
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*'
         },
