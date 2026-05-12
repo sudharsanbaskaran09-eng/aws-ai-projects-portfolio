@@ -18,7 +18,7 @@ def lambda_handler(event, context):
         Text=text,
         Lang
 
-    sentiment = response['Sentiment']
+    sentiment =
     scores = response['SentimentScore']
 
     ret
