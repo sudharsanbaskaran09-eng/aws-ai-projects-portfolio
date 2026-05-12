@@ -21,9 +21,7 @@ def lambda_handler(event, context):
     sentiment = response['Sentiment']
     scores = response['SentimentScore']
 
-    return {
-        'statusCode': 200,
-        'headers': {
+    ret
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*'
         },
