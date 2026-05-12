@@ -10,10 +10,6 @@ def lambda_handler(event, context):
         body = json.loads(event['body'])
     else:
         body = event
-
-    text = body['text']
-
-    # Call Comprehend
     response = comprehend_client.detect_sentiment(
         Text=text,
         Lang
