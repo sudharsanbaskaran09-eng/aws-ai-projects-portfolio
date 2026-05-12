@@ -16,8 +16,7 @@ def lambda_handler(event, context):
     # Call Comprehend
     response = comprehend_client.detect_sentiment(
         Text=text,
-        LanguageCode='en'
-    )
+        Lang
 
     sentiment = response['Sentiment']
     scores = response['SentimentScore']
