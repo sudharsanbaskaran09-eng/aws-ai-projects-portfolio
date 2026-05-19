@@ -12,10 +12,6 @@ def get_response(user_message):
     """Generate chatbot response based on user input"""
     message_lower = user_message.lower().strip()
 
-    for keyword, response in RESPONSES.items():
-        if keyword in message_lower:
-            return response
-
     return RESPONSES['default']
 
 def save_to_dynamodb(session_id, user_message, bot_response):
