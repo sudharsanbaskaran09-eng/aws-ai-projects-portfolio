@@ -22,12 +22,7 @@ def save_to_dynamodb(session_id, user_message, bot_response):
             'session_id': session_id,
             'timestamp': datetime.now().isoformat(),
             'user_message': user_message,
-            'bot_response': bot_response
-        }
-    )
-
-def lambda_handler(event, context):
-
+            'bot_response': bot_respo
     if isinstance(event.get('body'), str):
         body = json.loads(event['body'])
     else:
