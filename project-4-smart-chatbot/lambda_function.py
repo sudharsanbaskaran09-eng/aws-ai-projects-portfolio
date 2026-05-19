@@ -17,11 +17,6 @@ def get_response(user_message):
 def save_to_dynamodb(session_id, user_message, bot_response):
     """Save conversation to DynamoDB"""
     table = dynamodb.Table(TABLE_NAME)
-    table.put_item(
-        Item={
-            'session_id': session_id,
-            'timestamp': datetime.now().isoformat(),
-            'user_message': user_message,
             'bot_response': bot_respo
     if isinstance(event.get('body'), str):
         body = json.loads(event['body'])
