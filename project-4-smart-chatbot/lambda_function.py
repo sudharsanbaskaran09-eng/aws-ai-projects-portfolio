@@ -3,11 +3,7 @@
 # Chatbot responses
 RESPONSES = {
     'hello': 'Hello! Welcome! How can I help you today?',
-    'hi': 'Hi there! How can I assist y
-    'price': 'AWS offers a Free Tier for most services. Visit aws.amazon.com/free for details.',
-    'default': 'I did not understand that. Try asking about: aws, services, contact, github or help.'
-}
-
+    'hi': 'Hi there! How can I ass
 def get_response(user_message):
     """Generate chatbot response based on user input"""
     message_lower = user_message.lower().strip()
