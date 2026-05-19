@@ -1,10 +1,4 @@
-import boto3
-import json
-import uuid
-from datetime import datetime
-
-dynamodb = boto3.resource('dynamodb')
-TABLE_NAME = 'ChatHistory'
+'ChatHistory'
 
 # Chatbot responses
 RESPONSES = {
