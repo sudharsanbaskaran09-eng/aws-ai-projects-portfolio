@@ -13,8 +13,7 @@ RESPONSES = {
     'help': 'I can help you with: 1) AWS Services 2) Project Info 3) Contact Details. What do y
     message_lower = user_message.lower().strip()
 
-    for keyword, response in RESPONSES.items():
-        if keyword in message_lower:
+ in message_lower:
             return response
 
     return RESPONSES['default']
