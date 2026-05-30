@@ -9,20 +9,7 @@ Cloud AI Architect learning journey.
 ---
 
 
-## Architecture Overview
-```
-User Request
-     ↓
-API Gateway        — REST API layer
-     ↓
-AWS Lambda         — Serverless compute
-     ↓
-AI Services        — Rekognition / Comprehend / Textract / Lex / Bedrock
-     ↓
-Storage            — S3 / DynamoDB / OpenSearch
-```
-
----
+## Architec
 
 ## Tech Stack
 
