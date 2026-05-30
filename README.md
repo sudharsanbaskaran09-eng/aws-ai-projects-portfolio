@@ -8,12 +8,7 @@ Cloud AI Architect learning journey.
 
 ---
 
-## Projects
-
-| # | Project | Services Used | Level |
-|---|---------|--------------|-------|
-| 1 | [Image Recognition App](./project-1-image-recognition) | S3, Rekognition, Lambda, API Gateway | Beginner |
-| 2 | [Sentiment Analysis Dashboard](./project-2-sentiment-analysis) | Comprehend, Lambda, API Gateway, S3 | Beginner |
+## y, S3 | Beginner |
 | 3 | [AI Document Scanner](./project-3-document-scanner) | Textract, S3, DynamoDB, Lambda | Intermediate |
 | 4 | [Smart Chatbot](./project-4-smart-chatbot) | Lex, Lambda, DynamoDB | Intermediate |
 | 5 | [GenAI App with Bedrock](./project-5-genai-bedrock) | Bedrock, Lambda, API Gateway | Advanced |
