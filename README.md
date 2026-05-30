@@ -6,13 +6,6 @@ Cloud AI Architect learning journey.
 
 ---
 
-## About Me
-
-- Fresher | Aspiring Cloud AI Architect
-- Hands-on AWS AI/ML projects
-- Python | boto3 | Serverless Architecture
-- Chennai, India
-
 ---
 
 ## Projects
