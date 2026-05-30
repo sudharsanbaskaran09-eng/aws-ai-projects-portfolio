@@ -6,10 +6,42 @@ Cloud AI Architect learning journey.
 
 ---
 
+## About Me
+
+- Fresher | Aspiring Cloud AI Architect
+- Hands-on AWS AI/ML projects
+- Python | boto3 | Serverless Architecture
+- Chennai, India
+
 ---
 
+## Projects
 
-## Architec
+| # | Project | Services Used | Level |
+|---|---------|--------------|-------|
+| 1 | [Image Recognition App](./project-1-image-recognition) | S3, Rekognition, Lambda, API Gateway | Beginner |
+| 2 | [Sentiment Analysis Dashboard](./project-2-sentiment-analysis) | Comprehend, Lambda, API Gateway, S3 | Beginner |
+| 3 | [AI Document Scanner](./project-3-document-scanner) | Textract, S3, DynamoDB, Lambda | Intermediate |
+| 4 | [Smart Chatbot](./project-4-smart-chatbot) | Lex, Lambda, DynamoDB | Intermediate |
+| 5 | [GenAI App with Bedrock](./project-5-genai-bedrock) | Bedrock, Lambda, API Gateway | Advanced |
+| 6 | [Document Q&A Bot RAG](./project-6-document-qa-rag) | Bedrock, S3, OpenSearch, Lambda | Advanced |
+
+---
+
+## Architecture Overview
+```
+User Request
+     ↓
+API Gateway        — REST API layer
+     ↓
+AWS Lambda         — Serverless compute
+     ↓
+AI Services        — Rekognition / Comprehend / Textract / Lex / Bedrock
+     ↓
+Storage            — S3 / DynamoDB / OpenSearch
+```
+
+---
 
 ## Tech Stack
 
