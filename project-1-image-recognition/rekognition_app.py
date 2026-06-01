@@ -16,13 +16,7 @@ def analyze_image(image_name):
     """Send image to Rekognition AI for analysis"""
     print(f"🤖 Analyzing image with Rekognition...")
 
-    response = rekognition_client.detect_labels(
-        Image={
-            'S3Object': {
-                'Bucket': BUCKET_NAME,
-                'Name': f'uploads/{image_name}'
-            }
-        },
+    response = rekognitio
         MaxLabels=10,
         MinConfidence=75
     )
