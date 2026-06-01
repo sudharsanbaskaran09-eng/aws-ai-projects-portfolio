@@ -13,19 +13,9 @@ def upload_image_to_s3(image_path, image_name):
     print(f"✅ Upload successful!")
 
 def analyze_image(image_name):
-    """Send image to Rekognition AI for analysis"""
     print(f"🤖 Analyzing i
 
     # Save results locally
-    with open('results.json', 'w') as f:
-        json.dump(response['Labels'], f, indent=4)
-
-    print("\n💾 Results saved to results.json")
-    return response['Labels']
-
-def save_results_to_s3(image_name):
-    """Upload results back to S3"""
-    result_file = image_name.replace('.jpg', '_results.json')
     s3_client.upload_file('results.json', BUCKET_NAME, f'results/{result_file}')
     print(f"☁️ Results saved to S3!")
 
