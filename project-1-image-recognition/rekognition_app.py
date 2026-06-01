@@ -5,8 +5,6 @@ import json
 s3_client = boto3.client('s3', region_name='us-east-1')
 rekognition_client = boto3.client('rekognition', region_name='us-east-1')
 
-# Your S3 bucket name
-BUCKET_NAME = 'image-rekognition-brat'
 
 def upload_image_to_s3(image_path, image_name):
     """Upload local image to S3"""
