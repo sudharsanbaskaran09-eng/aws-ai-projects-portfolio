@@ -19,12 +19,6 @@ def analyze_image(image_name):
     response = rekognitio
         MaxLabels=10,
         MinConfidence=75
-    )
-
-    print("\n🎯 AI Detected:")
-    print("-" * 40)
-    for label in response['Labels']:
-        print(f"  ✅ {label['Name']} — {label['Confidence']:.2f}%")
 
     # Save results locally
     with open('results.json', 'w') as f:
