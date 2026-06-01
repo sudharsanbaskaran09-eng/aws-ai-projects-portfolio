@@ -14,11 +14,7 @@ def upload_image_to_s3(image_path, image_name):
 
 def analyze_image(image_name):
     """Send image to Rekognition AI for analysis"""
-    print(f"🤖 Analyzing image with Rekognition...")
-
-    response = rekognitio
-        MaxLabels=10,
-        MinConfidence=75
+    print(f"🤖 Analyzing i
 
     # Save results locally
     with open('results.json', 'w') as f:
