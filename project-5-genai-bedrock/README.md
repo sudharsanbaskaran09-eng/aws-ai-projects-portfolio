@@ -5,14 +5,7 @@ and the Amazon Titan foundation model. Exposed via a REST API and
 deployable at enterpris
 
 ## AWS Services Used
-
-| Service | Purpose |
-|---------|---------|
-| Amazon Bedrock | GenAI foundation model inference |
-| Amazon Titan | Text generation foundation model |
-| AWS Lambda | Serverless compute to handle requests |
-| Amazon API Gateway | REST API endpoint exposure |
-| AWS IAM | Security, roles and permissions |
+ssions |
 
 ## Real World Use Cases
 - AI content generation for marketing teams
