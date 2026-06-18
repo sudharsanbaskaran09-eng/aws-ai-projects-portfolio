@@ -2,29 +2,7 @@
 - Customer support response drafti```
 
 project-5-genai-bedrock/
-├── bedrock_app.py           # Local script for GenAI testing
-├── lambda_function.py       # Lambda handler for serverless execution
-├── response1.json           # Sample AI output — general knowledge
-├── response2.json           # Sample AI output — technical question
-├── response3.json           # Sample AI output — creative use case
-├── README.md
-└── screenshots/
-
-```
-
-## Prerequisites
-- AWS Account with Free Tier
-- Amazon Bedrock model access enabled for Titan
-- Python 3.x
-- AWS CLI configured
-- boto3 installed
-
-## How to Run
-
-### Local
-```bash
-pip install boto3
-aws configure
+├── bed
 python bedrock_app.py
 
 ```
