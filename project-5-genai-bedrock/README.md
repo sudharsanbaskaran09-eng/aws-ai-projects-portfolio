@@ -1,5 +1,3 @@
-# GenAI App with Amazon Bedrock — AWS AI Project
-
 ## Overview
 A serverless Generative AI application built on AWS that accepts any
 text prompt and returns AI-generated responses using Amazon Bedrock
