@@ -1,12 +1,13 @@
-# AWS AI Projects Port
+# AWS AI Projects Portfolio
 
 A hands-on collection of 6 AI projects built on Amazon Web Services (AWS),
-progressing from beginner to advanced level — built as part of
+progressing from beginner to advanced level — built as part of my
 Cloud AI Architect learning journey.
 
 ---
 
-## Abou
+## About Me
+
 - Fresher | Aspiring Cloud AI Architect
 - Hands-on AWS AI/ML projects
 - Python | boto3 | Serverless Architecture
