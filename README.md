@@ -1,4 +1,4 @@
-# AWS AI Projects Portfolio
+# AWS AI Projects Port
 
 A hands-on collection of 6 AI projects built on Amazon Web Services (AWS),
 progressing from beginner to advanced level — built as part of
