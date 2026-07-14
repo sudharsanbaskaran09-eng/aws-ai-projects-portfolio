@@ -6,8 +6,7 @@ Cloud AI Architect learning journey.
 
 ---
 
-## About Me
-
+## Abou
 - Fresher | Aspiring Cloud AI Architect
 - Hands-on AWS AI/ML projects
 - Python | boto3 | Serverless Architecture
