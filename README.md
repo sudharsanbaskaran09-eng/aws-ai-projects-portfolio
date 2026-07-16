@@ -5,13 +5,7 @@ progressing from beginner to advanced level — built as part of my
 Cloud AI Architect learning journey.
 
 - Fresher | Aspiring Cloud AI Architect
-- Hands-on AWS AI/ML projects
-- Python | boto3 | Serverless Architecture
-- Chennai, India
-
----
-
-## Projects
+- Hands-on AWS AI/ML  | boto3 | Serverless 
 
 | # | Project | Services Used | Level |
 |---|---------|--------------|-------|
