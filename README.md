@@ -6,7 +6,7 @@ A compact portfolio of six serverless AWS AI demo projects that showcase practic
 
 - project-1-image-recognition — Image analysis demo using Amazon Rekognition
 - project-2-sentiment-analysis — Sentiment analysis demo using Amazon Comprehend
-- project-3-document-scanner — Document OCR & extraction using Amazon Textract
+- project-3-document-scanner — Document OCR & extra
 - project-4-smart-chatbot — Chatbot demo storing chats in DynamoDB
 - project-5-genai-bedrock — Generative AI demo using Amazon Bedrock (Titan)
 - project-6-document-qa-rag — RAG-based Q&A demo (S3 + Bedrock / Nova Lite)
