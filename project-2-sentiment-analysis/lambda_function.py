@@ -2,8 +2,7 @@ import boto3
 import json
 
 s3_client = boto3.client('s3', region_name='us-east-1')
-bedrock_client = boto3.client(
-    service_name='bedrock-runtime',
+bedrock_client = b
     region_name='us-east-1'
 )
 
